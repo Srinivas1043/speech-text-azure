@@ -1,5 +1,5 @@
 import azure.cognitiveservices.speech as speechsdk
-speech_key, service_region  = "416417cc97d3400ca07c1ec1532a1286", "australiaeast"
+speech_key, service_region  = "b3a658c8aa694391a20561881d16e101", "australiaeast"
 speech_config = speechsdk.SpeechConfig(subscription=speech_key, region= service_region)
 audio_input = speechsdk.AudioConfig(filename ="narration.wav")
 speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, audio_config=audio_input)
